@@ -4,8 +4,8 @@ const percorrenza = prompt("Quanti Km vuoi percorrere?");
 let prezzoBiglietto = 0.21 * percorrenza;
 const etaPasseggero = prompt("Scrivi la tua età");
 
-if (isNaN(etaPasseggero)) {
-  alert("Non hai inserito un'età valida!!");
+if (isNaN(percorrenza) || isNaN(etaPasseggero)) {
+  alert("Non hai inserito un'età valida o un chilometraggio giusto!!");
 } else if (etaPasseggero < 18) {
   let scontoUnder18 = prezzoBiglietto * 0.8;
   console.log(`Il costo del biglietto è di : €${scontoUnder18.toFixed(2)}`);
